@@ -1,0 +1,32 @@
+body {
+  line-height: 1.5;
+  font-size: 100%;
+  color: #313131;
+}
+
+img {
+  width: 100%;
+}
+
+/* TEXT STYLES
+==================================================== */
+
+p {
+  font-size: 1em;
+}
+
+/* LINK STYLES
+==================================================== */
+
+a, a:link, a:active {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover, a:focus {
+  color: #fff;
+}
+
+a:visited {
+  color: #333;
+}
