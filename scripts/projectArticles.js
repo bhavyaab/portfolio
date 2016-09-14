@@ -10,7 +10,7 @@ var ourLocalData = [
   {
     projectTitle:       'Kelly Pattison',
     projectCategory:    'personal',
-    publishedOn:        '2016-10-08',
+    publishedOn:        '2016-10-09',
     projectPreview:     'http://placehold.it/300x150',
     projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     projectUrl:         'http://github.com/ackenepah'
@@ -18,7 +18,7 @@ var ourLocalData = [
   {
     projectTitle:       'First Day of Skeewl',
     projectCategory:    'school project',
-    publishedOn:        '2016-10-08',
+    publishedOn:        '2016-10-10',
     projectPreview:     'http://placehold.it/300x150',
     projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     projectUrl:         'http://github.com/ackenepah'

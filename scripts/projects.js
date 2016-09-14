@@ -9,11 +9,11 @@ function Project (options) {
   this.projectUrl = options.projectUrl;
 };
 
-Project.prototype.html = function() {
+Project.prototype.toHtml = function() {
   var $newProject = $('article.template').clone();
 
-  $newProject.find('h2').text(this.projectTitle);
   $newProject.attr('data-category', this.projectCategory);
+  $newProject.find('h2').text(this.projectTitle);
   $newProject.find('time').text(this.publishedOn);
   $newProject.find('.preview img').attr('src', this.projectPreview);
   $newProject.find('.preview span').html(this.projectDescription);
