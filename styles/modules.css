@@ -41,6 +41,13 @@ header h1 {
   border-bottom: 1px solid #ccc;
 }
 
+/* CONTENT STYLES
+==================================================== */
+
+.template {
+  display: none;
+}
+
 @media only screen and (min-width: 640px) {
 
   .main_nav ul {

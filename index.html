@@ -9,20 +9,15 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </head>
 
   <body>
-
     <header>
-
       <section class="header_wrap">
         <h1>AM</h1>
-
         <nav class="main_nav">
           <div class="icon-menu"></div>
-
           <ul>
             <li><a data-content="projects" href="#">Projects</a></li>
             <li><a ata-content="about" href="http://github.com/ackenepah" target="_blank">GitHub</a></li>
@@ -30,54 +25,36 @@
           </ul>
         </nav>
       </section>
-
     </header>
 
     <main>
-      <section>
-        <article>
-          <h2>Project Title #1</h2>
-          <img src="http://placehold.it/300x150">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </article>
-
-        <article>
-          <h2>Project Title #2</h2>
-          <img src="http://placehold.it/300x150">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </article>
-
-        <article>
-          <h2>Project Title #3</h2>
-          <img src="http://placehold.it/300x150">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </article>
-
-        <article>
-          <h2>Project Title #4</h2>
-          <img src="http://placehold.it/300x150">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+      <section id="projects">
+        <article class="template" data-category="cat">
+          <div class="heading">
+            <h2></h2>
+            <div class="byline">
+              <time datetime="2000-01-01"></time>
+            </div>
+          </div>
+          <div class="preview">
+            <img src="">
+            <span class="description_body"></span>
+            <a href=""></a>
+          </div>
         </article>
       </section>
     </main>
 
     <footer>
       <h1>AM</h1>
-
       <img src="http://placehold.it/40x40">
       <img src="http://placehold.it/40x40">
       <img src="http://placehold.it/40x40">
-
-      <p>Copyright &copy; 2016 Adrian Martin</p>
+      <p>Copyright &copy; 2016 Adrian Martin.</p>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/projectArticles.js"></script>
+    <script type="text/javascript" src="scripts/projects.js"></script>
   </body>
 </html>
