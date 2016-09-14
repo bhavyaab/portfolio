@@ -5,6 +5,7 @@ function Project (options) {
   this.projectCategory = options.projectCategory;
   this.publishedOn = options.publishedOn;
   this.projectPreview = options.projectPreview;
+  this.projectUrl = options.projectUrl;
   this.projectDescription = options.projectDescription;
 };
 
@@ -14,8 +15,9 @@ Project.prototype.html = function() {
   $newProject.find('h2').text(this.projectTitle);
   $newProject.attr('data-category', this.projectCategory);
   $newProject.find('time').text(this.publishedOn);
-  $newProject.find('img').attr('src', this.projectPreview);
-  $newProject.find('description_body').text(this.projectDescription);
+  $newProject.find('.preview img').attr('src', this.projectPreview);
+  $newProject.find('.preview p a').attr('href', this.projectUrl);
+  $newProject.find('.preview description_body').text(this.projectDescription);
 
   $('article').removeClass('template');
   return $newProject;

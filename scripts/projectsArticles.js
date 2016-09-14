@@ -5,7 +5,7 @@ var ourLocalData = [
     publishedOn:        '2016-10-08',
     projectPreview:     'http://placehold.it/300x150',
     projectUrl:         'http://github.com/ackenepah',
-    projectDescription: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'
+    projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   },
   {
     projectTitle:       'Kelly Pattison',
@@ -13,7 +13,7 @@ var ourLocalData = [
     publishedOn:        '2016-10-08',
     projectPreview:     'http://placehold.it/300x150',
     projectUrl:         'http://github.com/ackenepah',
-    projectDescription: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'
+    projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   },
   {
     projectTitle:       'First Day of Skeewl',
@@ -21,6 +21,6 @@ var ourLocalData = [
     publishedOn:        '2016-10-08',
     projectPreview:     'http://placehold.it/300x150',
     projectUrl:         'http://github.com/ackenepah',
-    projectDescription: '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'
+    projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   },
 ];
