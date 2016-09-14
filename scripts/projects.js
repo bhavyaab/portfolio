@@ -13,11 +13,11 @@ Project.prototype.toHtml = function() {
   var $newProject = $('article.template').clone();
 
   $newProject.attr('data-category', this.projectCategory);
-  $newProject.find('h2').text(this.projectTitle);
+  $newProject.find('.heading h2').text(this.projectTitle);
   $newProject.find('time').text(this.publishedOn);
   $newProject.find('.preview img').attr('src', this.projectPreview);
   $newProject.find('.preview span').html(this.projectDescription);
-  $newProject.find('.preview p a').attr('href', this.projectUrl);
+  $newProject.find('.preview p a').attr('href', this.projectUrl).text('Preview Project');
 
   $('article').removeClass('template');
   return $newProject;
