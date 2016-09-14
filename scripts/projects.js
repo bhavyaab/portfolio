@@ -16,4 +16,7 @@ Project.prototype.html = function() {
   $newProject.find('time').text(this.publishedOn);
   $newProject.find('img').attr('src', this.projectPreview);
   $newProject.find('description_body').text(this.projectDescription);
+
+  $('article').removeClass('templates');
+  return $newProject;
 };
