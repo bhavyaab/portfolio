@@ -48,6 +48,10 @@ header h1 {
   display: none;
 }
 
+#about {
+  display: none;
+}
+
 @media only screen and (min-width: 640px) {
 
   .main_nav ul {
