@@ -17,7 +17,7 @@ Project.prototype.toHtml = function() {
   $newProject.find('time').text('Published On: ' + this.publishedOn);
   $newProject.find('.preview img').attr('src', this.projectPreview);
   $newProject.find('.preview span').html(this.projectDescription);
-  $newProject.find('.preview a').attr('href', this.projectUrl).text('Preview Project');
+  $newProject.find('.preview a').attr('href', this.projectUrl);
 
   $newProject.removeClass('template');
   return $newProject;
