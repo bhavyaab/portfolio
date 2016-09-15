@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="styles/modules.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </head>
-
   <body>
     <header>
       <section class="header_wrap">
@@ -19,16 +18,16 @@
         <nav class="main_nav">
           <div class="icon-menu"></div>
           <ul>
-            <li><a data-content="projects" href="#">Projects</a></li>
-            <li><a ata-content="about" href="http://github.com/ackenepah" target="_blank">GitHub</a></li>
-            <li><a data-content="contact" href="http://twitter.com/aken37" target="_blank">Twitter</a></li>
+            <li class="tab" data-content="projects"><a href="#">Projects</a></li>
+            <li class="tab" data-content="about"><a href="#">About</a></li>
+            <li data-content="github"><a href="http://github.com/ackenepah" target="_blank">GitHub</a></li>
+            <li data-content="twitter"><a href="http://twitter.com/aken37" target="_blank">Twitter</a></li>
           </ul>
         </nav>
       </section>
     </header>
-
     <main>
-      <section id="projects">
+      <section id="projects" class="tab-content">
         <article class="template" data-category="cat">
           <div class="heading">
             <h2></h2>
@@ -39,12 +38,22 @@
           <div class="preview">
             <img src="">
             <span class="description_body"></span>
-            <a href=""></a>
+            <a href="" target="_blank">Preview Project</a>
           </div>
         </article>
       </section>
-    </main>
-
+      <section id="about" class="tab-content">
+        <h2>About Me</h2>
+        <section>
+          <h1>Some of my intrests:</h1>
+          <ul>
+            <li>Coding</li>
+            <li>Sharing what I've learned</li>
+            <li>Hanging with my family</li>
+          </ul>
+        </section>
+      </section>
+      </main>
     <footer>
       <h1>AM</h1>
       <img src="http://placehold.it/40x40">
@@ -54,7 +63,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/projectArticles.js"></script>
-    <script type="text/javascript" src="scripts/projects.js"></script>
+    <script src="scripts/projectArticles.js"></script>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/articleView.js"></script>
   </body>
 </html>

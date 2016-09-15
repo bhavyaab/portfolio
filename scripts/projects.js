@@ -1,7 +1,7 @@
 var projects = [];
 
 function Project (options) {
-  this.projectTitle = options.projecTitle;
+  this.projectTitle = options.projectTitle;
   this.projectCategory = options.projectCategory;
   this.publishedOn = options.publishedOn;
   this.projectPreview = options.projectPreview;
@@ -14,12 +14,12 @@ Project.prototype.toHtml = function() {
 
   $newProject.attr('data-category', this.projectCategory);
   $newProject.find('.heading h2').text(this.projectTitle);
-  $newProject.find('time').text('Published On: ', this.publishedOn);
+  $newProject.find('time').text('Published On: ' + this.publishedOn);
   $newProject.find('.preview img').attr('src', this.projectPreview);
   $newProject.find('.preview span').html(this.projectDescription);
-  $newProject.find('.preview p a').attr('href', this.projectUrl).text('Preview Project');
+  $newProject.find('.preview a').attr('href', this.projectUrl);
 
-  $('article').removeClass('template');
+  $newProject.removeClass('template');
   return $newProject;
 };
 
