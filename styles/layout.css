@@ -1,14 +1,30 @@
 header {
-  background: #000;
-  height: 100px;
+  background: #000
+              url('../images/hero.jpg')
+              no-repeat
+              center;
+  background-size: cover;
+  height: 300px;
+}
+
+main {
+  display: flex;
+}
+
+main section {
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 
 @media only screen and (min-width: 640px) {
 
   .header_wrap {
+    max-width: 960px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;;
   }
 
 }

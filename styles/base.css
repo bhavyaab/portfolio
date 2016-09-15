@@ -3,6 +3,7 @@
 }
 
 body {
+  background-color: #e8eBe4;
   line-height: 1.5;
   font-size: 100%;
 }
@@ -18,5 +19,6 @@ p {
 ==================================================== */
 
 a, a:link, a:active {
+  color: #fff;
   text-decoration: none;
 }
