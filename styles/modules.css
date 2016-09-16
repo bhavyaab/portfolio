@@ -14,12 +14,12 @@ header h1 {
 
 /* --- Navigation --- */
 .icon-menu {
+  float: right;
   font-size: 2.5em;
-  color: #fff;
+  color: #000;
 }
 
 .main_nav {
-  float: left;
   width: 100%;
 }
 

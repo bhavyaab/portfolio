@@ -9,9 +9,6 @@ header {
 
 main {
   display: flex;
-}
-
-main section {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
