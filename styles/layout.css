@@ -22,7 +22,7 @@ main {
 .description_body {
   width: 300px;
   position: absolute;
-  bottom: 0;
+  bottom: 7px;
 }
 
 @media only screen and (min-width: 640px) {

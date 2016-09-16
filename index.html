@@ -10,6 +10,23 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+
+    <script id ="project-template" type="text/x-handlebars-template" >
+      <article class="clearfix" data-title="{{projectTitle}}" data-category="{{projectCategory}}">
+        <div class="heading">
+          <h2>{{projectTitle}}</h2>
+          <div class="byline">
+            <time datetime="2000-01-01">{{publishedOn}}</time>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview-content">
+            <img src="{{projectPreview}}">
+            <p class="description_body">{{projectDescription}}</p>
+          </div>
+        </div>
+      </article>
+    </script>
   </head>
   <body>
     <header>
@@ -30,15 +47,15 @@
       <section id="projects" class="tab-content">
         <article class="template" data-category="cat">
           <div class="heading">
-            <h2></h2>
+            <h2><!-- TITLE --></h2>
             <div class="byline">
-              <time datetime="2000-01-01"></time>
+              <!-- Published On: --><time datetime="2000-01-01"><!-- DATE --></time>
             </div>
           </div>
           <div class="preview">
             <div class="preview-content">
               <img src="">
-              <p class="description_body"></p>
+              <p class="description_body"><!-- DESCRIPTION --></p>
             </div>
           </div>
         </article>
@@ -66,6 +83,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
     <script src="scripts/projectArticles.js"></script>
     <script src="scripts/projects.js"></script>
     <script src="scripts/articleView.js"></script>
