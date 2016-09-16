@@ -6,6 +6,10 @@ header section {
   text-align: center;
 }
 
+header section {
+  position: relative;
+}
+
 main {
   padding: 10px;
 }
