@@ -63,6 +63,28 @@ header h1 {
   display: none;
 }
 
+.heading h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.byline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .2em;
+  color: #999;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.description_body {
+  background-color: #333;
+  opacity: 0.5;
+}
+
+
 /* FOOTER STYLES
 ==================================================== */
 

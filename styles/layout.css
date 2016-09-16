@@ -2,10 +2,28 @@ main section,
 header section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
 }
 
+main {
+  padding: 10px;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+}
+.preview-content {
+  position: relative;
+  width: 300px;
+}
+
+.description_body {
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+}
 
 @media only screen and (min-width: 640px) {
 

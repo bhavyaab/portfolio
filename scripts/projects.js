@@ -15,7 +15,7 @@ Project.prototype.toHtml = function() {
   $newProject.attr('data-category', this.projectCategory);
   $newProject.find('.heading h2').text(this.projectTitle);
   $newProject.find('time').text('Published On: ' + this.publishedOn);
-  $newProject.find('.preview img').attr('src', this.projectPreview);
+  $newProject.find('.preview .preview-content img').attr('src', this.projectPreview);
   $newProject.find('.preview p').html(this.projectDescription);
   $newProject.find('.preview a').attr('href', this.projectUrl);
 
