@@ -7,21 +7,20 @@ header {
   height: 300px;
 }
 
-main {
+main section,
+header section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
 }
 
+
 @media only screen and (min-width: 640px) {
 
   .header_wrap {
     max-width: 960px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;;
   }
 
 }
