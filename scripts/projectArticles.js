@@ -23,4 +23,12 @@ var ourLocalData = [
     projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     projectUrl:         'http://github.com/ackenepah'
   },
+  {
+    projectTitle:       'Salmon Cookies',
+    projectCategory:    'school project',
+    publishedOn:        '2016-10-11',
+    projectPreview:     'http://placehold.it/300x150',
+    projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    projectUrl:         'http://github.com/ackenepah'
+  },
 ];
