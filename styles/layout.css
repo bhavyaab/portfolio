@@ -1,3 +1,12 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 main section,
 header section {
   display: flex;
@@ -11,30 +20,28 @@ header section {
 }
 
 main {
+  flex: 1;
   padding: 10px;
 }
 
 .preview {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin: 20px 0 50px 0;
 }
 .preview-content {
   position: relative;
   width: 300px;
+  height: 215px;
 }
 
 .description_body {
-  width: 300px;
+  width: 100%;
+  padding: 5px;
   position: absolute;
   bottom: 7px;
 }
 
 @media only screen and (min-width: 640px) {
-
-  .header_wrap {
-    max-width: 960px;
-    margin: 0 auto;
-  }
 
 }

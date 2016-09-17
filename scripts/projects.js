@@ -6,6 +6,7 @@ function Project (options) {
   this.publishedOn = options.publishedOn;
   this.projectPreview = options.projectPreview;
   this.projectDescription = options.projectDescription;
+  this.previewDescription = options.previewDescription;
   this.projectUrl = options.projectUrl;
 };
 
@@ -19,6 +20,6 @@ ourLocalData.forEach(function(project) {
   projects.push(new Project(project));
 });
 
-projects.forEach(function(project) {
-  $('#projects').append(project.toHtml());
+projects.forEach(function(p) {
+  $('#projects').append(p.toHtml());
 });

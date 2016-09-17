@@ -22,7 +22,10 @@
         <div class="preview">
           <div class="preview-content">
             <img src="{{projectPreview}}">
-            <p class="description_body">{{projectDescription}} <a href="#" class="read-on">Read on &rarr;</a></p>
+            <div class="description_body">
+              <p class="hide">{{previewDescription}}<a href="#" class="read-on">Read on &rarr;</a></p>
+              <p class="show">{{projectDescription}}</p>
+            </div>
           </div>
         </div>
       </article>
@@ -45,7 +48,7 @@
 
     <main>
       <section id="projects" class="tab-content">
-
+        <!-- Content Area -->
       </section>
 
       <section id="about" class="tab-content">

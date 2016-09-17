@@ -49,10 +49,17 @@ header h1 {
 .main_nav li {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
-  color: #fff;
   background-color: #000;
   padding: .5em .2em;
   border-bottom: 1px solid #ccc;
+}
+
+.main_nav li a {
+  color: #fff;
+}
+
+.main_nav li a:hover {
+  color: #555;
 }
 
 /* CONTENT STYLES
@@ -82,12 +89,28 @@ header h1 {
   font-style: italic;
 }
 
+.preview-content {
+  background: rgba(0, 0, 0, .5);
+}
+
 .description_body {
   font-family: 'Open Sans', sans-serif;
   font-size: .7em;
-  color: #000;
+  color: #fff;
   opacity: 0.5;
-  background: rgba(255, 255, 255, 9);
+}
+
+.read-on {
+  float: right;
+  margin-right: 10px;
+}
+
+.hide {
+  text-align: left;
+}
+
+.show {
+  display: none;
 }
 
 
@@ -98,25 +121,21 @@ footer {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   color: #fff;
+  text-align: center;
   text-transform: uppercase;
   background: #000;
-}
-
-footer h1 {
-  display: inline;
 }
 
 footer span {
   font-size: 1em;
   color: #fff;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 footer p {
   font-family: 'Open Sans', sans-serif;
   font-size: .5em;
   text-align: center;
-  margin-top: 10px;
 }
 
 @media only screen and (min-width: 640px) {
