@@ -1,24 +1,28 @@
-var projects = [];
+Projects.allProjects = [];
 
-function Project (options) {
-  this.projectTitle = options.projectTitle;
-  this.projectCategory = options.projectCategory;
-  this.publishedOn = options.publishedOn;
-  this.projectPreview = options.projectPreview;
-  this.projectDescription = options.projectDescription;
-  this.projectUrl = options.projectUrl;
-};
-
-Project.prototype.toHtml = function() {
+Projects.prototype.toHtml = function() {
   var source = $('#project-template').html();
   var templateRender = Handlebars.compile(source);
   return templateRender(this);
 };
 
-ourLocalData.forEach(function(project) {
-  projects.push(new Project(project));
+projects.loadProjects(function(inputData) {
+  inputData.forEach(function(project) {
+    Projects.push(new Project(project));
+  });
 });
 
-projects.forEach(function(p) {
-  $('#projects').append(p.toHtml());
-});
+Project.fetchAll = function() {
+  if (localStorage.projectsContent) {
+    projects.loadProjects(JSON.parse(localStorage.projectsContent));
+    projectsView.renderIndex();
+  } else {
+    $.getJSON('../../data/projectsContent.json', function(data) {
+      projects.loadProjects(data);
+      var projectsData = JSON.stringify(data);
+      localStorage.setItem('projectsContent', projectsData);
+      projects.loadProjects(JSON.parse(localStorage.projectsContent));
+      projectsView.renderIndex();
+    });
+  }
+};
