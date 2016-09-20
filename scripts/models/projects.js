@@ -6,7 +6,6 @@ function Project (options) {
   this.publishedOn = options.publishedOn;
   this.projectPreview = options.projectPreview;
   this.projectDescription = options.projectDescription;
-  this.previewDescription = options.previewDescription;
   this.projectUrl = options.projectUrl;
 };
 
