@@ -1,6 +1,6 @@
-var articleView = {};
+var projectView = {};
 
-articleView.handleMainNav = function() {
+projectView.handleMainNav = function() {
   $('.main_nav').on('click', '.tab', function() {
     $('.tab-content').hide();
     var grabDataContent = $(this).attr('data-content');
@@ -10,7 +10,7 @@ articleView.handleMainNav = function() {
   $('.main_nav .tab:first').click();
 };
 
-articleView.setTeasers = function() {
+projectView.setTeasers = function() {
   $('preview-content *:nth-of-type(n+2)').hide();
 
   $('#projects').on('click', 'a.read-on', function(e) {
@@ -20,4 +20,12 @@ articleView.setTeasers = function() {
   });
 };
 
-articleView.handleMainNav();
+
+projectView.renderIndex = function() {
+  projects.forEach(function(p) {
+    $('#projects').append(p.toHtml('#project-template'));
+  });
+  projectView.handleMainNav();
+};
+
+Project.fetchAll();
